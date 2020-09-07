@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+}
+
+/* ------------ SIDE BAR ------------ */
+
+#sidebar {
+  height: 100vh;
+  width: 18%;
+  border-left: 1px solid rgba(200, 200, 200, 0.6);
+  text-align: center;
+  position: fixed;
+  right: 0;
+  padding-bottom: 30 vh;
+}
+
+#logo {
+  margin: 70 auto;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+}
+
+.nav a {
+  color: rgba(170, 170, 170, 1);
+  text-decoration: none;
+  font-family: "Lalezar", cursive;
+  font-size: 1.5rem;
+}
+
+.nav a:hover {
+  color: rgba(220, 220, 220, 1);
+  text-decoration: underline;
+}
+
+/* ------------ FIRST PAGE ------------ */
+
+#main {
+  width: 82%;
+}
+
+#hero {
+  height: 100vh;
+  background: url("./img/bg_hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.section_title {
+  font-family: "Lalezar", cursive;
+  font-size: 2rem;
+  color: rgb(60, 60, 60);
+  text-align: left;
+  padding: 20px 0px 20px 60px;
+  margin: 0;
+}
+
+#categories {
+  height: auto;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+
+.wrap {
+  background-blend-mode: multiply;
+  background-color: #666;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.wrap:hover {
+  background-color: #8b8b8b;
+}
+
+.cat {
+  height: 20vh;
+  border: 2px solid rgba(200, 200, 200, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat h3 {
+  font-size: 1.9rem;
+  color: rgb(200, 200, 200, 1);
+  font-family: "Lalezar", cursive;
+  text-shadow: 0px 0px 15px black;
+}
+
+#explore {
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-column-gap: 12px;
+}
+
+.masocol img {
+  width: 100%;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+}
+
+.masocol img:hover {
+  transform: scale(1.05);
+}
+
+#loadmore a {
+  color: #8b8b8b;
+  font-family: "Lalezar", cursive;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#loadmore a:hover {
+  color: #aaa;
+}
+
+/* ------------ Footer ------------ */
+
+#footer {
+  height: 200px;
+  width: auto;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#footer h2 {
+  color: #666;
+  font-size: 4.2rem;
+  font-family: sans-serif;
+}
+
+/* ------------ ARTISTS PAGE ------------ */
+
+.sortbox {
+  color: #8b8b8b;
+  font-family: "Lalezar", cursive;
+  border: 1px solid #666;
+  margin: 0px 90px 20px 90px;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.sortbox h2 {
+  margin: 0%;
+  padding: 0px 20px 0px 20px;
+  letter-spacing: 0.7px;
+}
+
+.sortbox p {
+  margin: 0%;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#alphabetical {
+  letter-spacing: 3px;
+  margin-right: 20px;
+}
+#categorical {
+  letter-spacing: 1.7px;
+}
+
+#brands {
+  height: auto;
+  padding: 0px 90px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+
+.card {
+  background-blend-mode: multiply;
+  background-color: #444;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  background-color: #555;
+}
+
+.brandlogo {
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  font-size: 1.6rem;
+  color: rgb(240, 240, 240, 1);
+  font-family: "Lalezar", cursive;
+  text-shadow: 0px 0px 15px black;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  color: rgb(190, 190, 190, 1);
+  font-family: "Lalezar", cursive;
+  text-shadow: 0px 0px 15px black;
+  text-align: center;
+  margin: 0;
+  padding: 0px 0px 15px 0px;
+}
+
+/* ------------ PRODUCT PAGE ------------ */
+
+#productdata {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+  padding: 50px 50px 0px 50px;
+}
+
+#productpictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 12px;
+}
+
+#tnp {
+  padding-bottom: 30px;
+}
+
+#productinfo h1 {
+  font-family: "Lalezar", cursive;
+  direction: rtl;
+  color: #eee;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 2;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#productinfo h2 {
+  font-family: "Lalezar", cursive;
+  direction: rtl;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+#productinfo h3 {
+  font-family: "Lalezar", cursive;
+  direction: rtl;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#productinfo p {
+  text-align: justify;
+  font-family: "Lalezar", cursive;
+  direction: rtl;
+  color: #aaa;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
